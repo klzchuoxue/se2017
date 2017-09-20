@@ -1,0 +1,1 @@
+#define This_is_a_test_file_for_git_on_windows
