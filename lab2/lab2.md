@@ -22,7 +22,7 @@
 
 由于只有一个功能，故主函数结构极为简单：输入->处理->结束
 
-![(http://imglf1.nosdn.127.net/img/ekx2Wk55b0tGRUJrWm5kQ1RSWUJIWHo5QjhRUXFpSjc1bmNIZnNtcHdpRmVLZ1BpbnVOUU5RPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRURRRkFBazdmdE5LQTcwWEtJVHVzRVg3SW9LbER6YXZyd2Q5bWw5cVQ2QXR3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
 
 图3.1 主函数代码
 
@@ -46,7 +46,7 @@
 
 由于输入命令只有一段，故采取最简单的if-else if-else结构，函数名称为menu。
 
-![(http://imglf0.nosdn.127.net/img/ekx2Wk55b0tGRUJrWm5kQ1RSWUJIVW5VM1JUUXI4aWI4M0tVbTdmUDZPazdjWXZNd1g5YkZnPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf5.nosdn.127.net/img/ekx2Wk55b0tGRURRRkFBazdmdE5LRWlLNjVwa0Z3VU5ydkJSN0JuMEpmRHBZNks3dVdaOTRBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
 
 图3.3 处理函数代码
 
@@ -67,15 +67,9 @@
 >
 >`./lab2 kes`
 
-![(http://imglf2.nosdn.127.net/img/ekx2Wk55b0tGRUJrWm5kQ1RSWUJIVGJ5bDNmYXhaOSs3azdZemlMZVY0alNnNkRoQkZuSUVnPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRURRRkFBazdmdE5LTFc4eXlXSzArd2ZpbWJTS0U5SHBWYVNnRDhPQm5pbGVBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
 
-图3.2 本地仓库
-
-(3) 设置git参数：
-
-![(http://imglf2.nosdn.127.net/img/ekx2Wk55b0tGRUJrWm5kQ1RSWUJIVGJ5bDNmYXhaOSs3azdZemlMZVY0alNnNkRoQkZuSUVnPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
-
-图3.3 设置完毕的参数内容
+图3.4 测试结果
 
 # 4 实验总结
 
