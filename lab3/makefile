@@ -1,9 +1,11 @@
+LIBS = -std=gnu++11
+
 main.out: main.o function.o
-	gcc -o main.out main.o function.o
-main.o: main.c function.h
-	gcc -c main.c
-function.o: function.c function.h
-	gcc -c function.c
+	g++ -o main.out main.o function.o ${LIBS}
+main.o: main.cpp function.h
+	g++ -c main.cpp ${LIBS}
+function.o: function.cpp function.h
+	g++ -c function.cpp ${LIBS}
 
 clean: 
 	rm main.out main.o function.o

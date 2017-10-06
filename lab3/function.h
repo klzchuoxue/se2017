@@ -1,25 +1,48 @@
-#pragma once
+#include <unordered_map>
+#include <iostream>
+#include <string>
+#include <utility>
+using namespace std;
 
-#define FUNC1	"com1"
-#define FUNC2	"com2"
-#define FUNC3	"com3"
-#define FUNC4	"com4"
-#define FUNC5	"com5"
-#define FUNC6	"com6"
-#define FUNC7	"com7"
-#define FUNC8	"com8"
-#define HELP1	"-h"
-#define HELP2	"-help"
+class command
+{
+public:
+	virtual void com(string *argv)=0;
+};
 
-void showEmptyInput();
-void showParameterLack();
-void com1(char *argv);
-void com2();
-void com3();
-void com4();
-void com5();
-void com6();
-void com7();
-void com8();
-void showHelp();
-void showWrongInput();
+class commandCom1 : public command
+{
+	void com(string *argv);
+};
+
+class commandCom2 : public command
+{
+public:
+	void com(string *argv);
+};
+
+class commandCom3 : public command
+{
+public:
+	void com(string *argv);
+};
+
+class commandHelp : public command
+{
+public:
+	void com(string *argv);
+};
+
+
+class mainClass
+{
+public:
+	mainClass();
+	~mainClass();
+	void run();
+	void showEmptyInput();
+	void showWrongInput();
+
+private:
+	unordered_map<string, command*> handler;
+};
