@@ -2,9 +2,12 @@
 
 int main() {
 	mainClass* mcls = new mainClass();
+	string fullCommand = "";
 	while (true)
 	{
-		mcls->run();
+		cout << ">>>>";
+		getline(cin, fullCommand);
+		mcls->run(fullCommand);
 	}
 
 	return 0;

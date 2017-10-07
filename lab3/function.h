@@ -39,10 +39,10 @@ class mainClass
 public:
 	mainClass();
 	~mainClass();
-	void run();
-	void showEmptyInput();
-	void showWrongInput();
+	void run(string argv);
 
 private:
 	unordered_map<string, command*> handler;
+	void showEmptyInput();
+	void showWrongInput();
 };

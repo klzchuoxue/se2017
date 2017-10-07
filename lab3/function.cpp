@@ -1,6 +1,5 @@
 ﻿#include "function.h"
 #include <sstream>
-#include <string>
 
 void commandCom1::com(string* argv)
 {
@@ -44,15 +43,11 @@ void mainClass::showWrongInput()
 	cout << "Wrong input. Use -h or -help command to get more information" << endl;
 }
 
-void mainClass::run()
+void mainClass::run(string argv)
 {
-	string fullCommand = "";
 	string userCommand = "";
 	string parameter = "";
-	string defaultString = "defaultString";
-	cout << ">>>>";
-	getline(cin, fullCommand);
-	istringstream istr(fullCommand);
+	istringstream istr(argv);
 	if (istr >> userCommand)
 	{
 		unordered_map <string, command*> ::const_iterator it = handler.find(userCommand);
