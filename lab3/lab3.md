@@ -22,7 +22,7 @@
 
 各部分之间低耦合，高内聚。可扩展性极强。
 
-![](http://imglf5.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMHgwUmwrR1FsSTluYStwcjB1T3hRb1drM1RpMHV3L1J3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf5.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMHgwUmwrR1FsSTluYStwcjB1T3hRb1drM1RpMHV3L1J3PT0.png?imageView&thumbnail=1779y480&type=jpg&quality=96&stripmeta=0&type=jpg)
 
 图3.1 各部分示意图
 
@@ -59,11 +59,11 @@
 
 如3.2.1中设计的，以command为父类，类型为虚拟类，定义了执行函数com。从它继承了commandCom1等子类以执行不同的命令。
 
-![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmOHBqYjJNSStpbDE1cTYvUXk0eG16d1oxUEhzK0gvQUJ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmOHBqYjJNSStpbDE1cTYvUXk0eG16d1oxUEhzK0gvQUJ3PT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.2(a) 类的定义
 
-![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMGZkT2o1amxGanVvRGo3RmlqTlJpNldsZ3ZtV3ExT1ZnPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMGZkT2o1amxGanVvRGo3RmlqTlJpNldsZ3ZtV3ExT1ZnPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.2(b) 类执行函数的实现
 
@@ -71,17 +71,17 @@
 
 1. 如3.2.2中设计的，创立mainClass类，在其生成函数中创建3.3.1中定义的各子类并将其加入哈希表。
 
-![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmNGNNU0p1dFNFM2N4ZzhJVE1XYU1OUzdSUHExUC90ajJBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmNGNNU0p1dFNFM2N4ZzhJVE1XYU1OUzdSUHExUC90ajJBPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.3 mainClass的定义
 
-![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMGU1S1I0MXYwVzFpcDdkZWxiTWhpWUwyZmZraHhUOC9BPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMGU1S1I0MXYwVzFpcDdkZWxiTWhpWUwyZmZraHhUOC9BPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.4 对命令的定义
 
 2. 如3.2.2中设计的，在mainClass中定义public run作为调用方法和对外接口，showEmptyInput和showWrongInput作为错误处理方法。
 
-![](http://imglf6.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmN1p0cEFBdDdKdUZMUloyQ09tSlVjOXdObWY3VDVNM3BRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf6.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmN1p0cEFBdDdKdUZMUloyQ09tSlVjOXdObWY3VDVNM3BRPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.5 对命令的调用和错误处理
 
@@ -89,7 +89,7 @@
 
 如图，完成逻辑功能
 
-![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmODVqRkFHOWFOV2FWd0IxUGQ5aXRmMU5RV1VJT1pFK093PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmODVqRkFHOWFOV2FWd0IxUGQ5aXRmMU5RV1VJT1pFK093PT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.6 程序的逻辑与交互
 
@@ -108,7 +108,7 @@
 >
 >`-help`
 
-![](http://imglf5.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmd3NPZWRUOWNYQWl3Q29GUDlJTGVCVHZWME9sNnliQUFBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf5.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmd3NPZWRUOWNYQWl3Q29GUDlJTGVCVHZWME9sNnliQUFBPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.7(a) 预定义命令结果
 
@@ -116,7 +116,7 @@
 
 >`com1`
 
-![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmL2o3MC9yazdtd1ZnWVgwQnBvZlhyNUptT2JTMkJvVk9RPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf4.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmL2o3MC9yazdtd1ZnWVgwQnBvZlhyNUptT2JTMkJvVk9RPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.7(b) 缺少参数的预定义命令
 
@@ -124,7 +124,7 @@
 
 >` `(直接回车)
 
-![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMkx6NHlnQysxSE9Od3p5LzQ1bTJqdU9RVmh0eHpHS0dBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmMkx6NHlnQysxSE9Od3p5LzQ1bTJqdU9RVmh0eHpHS0dBPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.7(c) 空命令
 
@@ -132,7 +132,7 @@
 
 >`test`
 
-![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmNkRJc29RQ2pjYzRONlVXV0t1NC9seEtRbDJHMU85Nmd3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](http://imglf3.nosdn.127.net/img/ekx2Wk55b0tGRUNHY2JzY2ErWnFmNkRJc29RQ2pjYzRONlVXV0t1NC9seEtRbDJHMU85Nmd3PT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
 
 图3.7(d) 非预定义命令
 
