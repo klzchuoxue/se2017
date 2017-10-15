@@ -29,6 +29,7 @@ int com1(char **para);
 int com2(char **para);
 int com3(char **para);
 
-ftn * init();
 void showWrongInput();
 void showEmptyInput();
+
+ftn * init();

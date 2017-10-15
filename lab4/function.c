@@ -1,5 +1,6 @@
 #include "function.h"
 
+//创建链表
 ftn * createLinkList()
 {
 	ftn* head = (ftn*)malloc(sizeof(ftn));
@@ -7,6 +8,7 @@ ftn * createLinkList()
 	return head;
 }
 
+//加入节点
 ftn * appendNode(ftn* head, int(*handler)(), char* name)
 {
 	ftn *endNode = head;
@@ -30,6 +32,7 @@ ftn * appendNode(ftn* head, int(*handler)(), char* name)
 	}
 }
 
+//删除结点
 void deleteNode(ftn * head, char * targetName)
 {
 	ftn *endNode = head->next;
@@ -60,6 +63,7 @@ void deleteNode(ftn * head, char * targetName)
 	return;
 }
 
+//寻找结点
 ftn* findNode(ftn * head, char * targetName)
 {
 	ftn *targetNode = head->next;
@@ -77,6 +81,7 @@ ftn* findNode(ftn * head, char * targetName)
 	return targetNode;
 }
 
+//删除链表
 void deleteLinkList(ftn* head)
 {
 	ftn *endNode = head;
@@ -90,6 +95,7 @@ void deleteLinkList(ftn* head)
 	free(endNode);
 }
 
+//帮助函数
 int help(char **para)
 {
 	printf("This is a test program with 8 commands and help command\n\
@@ -100,6 +106,7 @@ int help(char **para)
 	return 0;
 }
 
+//命令1
 int com1(char **para)
 {
 	if (para[0])
@@ -109,27 +116,18 @@ int com1(char **para)
 	return 0;
 }
 
+//命令2
 int com2(char **para)
 {
 	printf("this is com2\n");
 	return 0;
 }
 
+//命令3
 int com3(char **para)
 {
 	printf("this is com3\n");
 	return 0;
-}
-
-ftn* init()
-{
-	ftn* cmd = createLinkList();
-	appendNode(cmd, help, "-help");
-	appendNode(cmd, com1, "com1");
-	appendNode(cmd, com2, "com2");
-	appendNode(cmd, com3, "com3");
-	appendNode(cmd, help, "-h");
-	return cmd;
 }
 
 void showWrongInput()
@@ -142,4 +140,18 @@ void showEmptyInput()
 {
 	printf("Empty Input. Need at least one command\n");
 	return;
+}
+
+
+//==================================================================================
+//初始化
+ftn* init()
+{
+	ftn* cmd = createLinkList();
+	appendNode(cmd, help, "-help");
+	appendNode(cmd, com1, "com1");
+	appendNode(cmd, com2, "com2");
+	appendNode(cmd, com3, "com3");
+	appendNode(cmd, help, "-h");
+	return cmd;
 }
