@@ -1,48 +1,34 @@
-#include <unordered_map>
-#include <iostream>
-#include <string>
-#include <utility>
-using namespace std;
+#pragma once
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
-class command
+struct function
 {
-public:
-	virtual void com(string *argv)=0;
+	char* name;
+	int (*handler)();
+	struct function* next;
 };
 
-class commandCom1 : public command
-{
-	void com(string *argv);
-};
+typedef struct function ftn;
 
-class commandCom2 : public command
-{
-public:
-	void com(string *argv);
-};
+ftn * createLinkList();
 
-class commandCom3 : public command
-{
-public:
-	void com(string *argv);
-};
+ftn * appendNode(ftn* head, int(*handler)(), char* name);
 
-class commandHelp : public command
-{
-public:
-	void com(string *argv);
-};
+void deleteNode(ftn * head, char * targetName);
 
+void deleteLinkList(ftn* head);
 
-class mainClass
-{
-public:
-	mainClass();
-	~mainClass();
-	void run(string argv);
+ftn* findNode(ftn * head, char * targetName);
 
-private:
-	unordered_map<string, command*> handler;
-	void showEmptyInput();
-	void showWrongInput();
-};
+//=====================================================
+
+int help(char **para);
+int com1(char **para);
+int com2(char **para);
+int com3(char **para);
+
+ftn * init();
+void showWrongInput();
+void showEmptyInput();
